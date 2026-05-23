@@ -1,43 +1,48 @@
-<h1 align="left">Patient Intake System</h1>
+<h1 align="center">Patient Intake System</h1>
 
-![Impact](https://img.shields.io/badge/Manual_Workload-Reduced_80%25-green)
-![User Driven](https://img.shields.io/badge/Based_on-Nurse_Requirements-blue)
-![Real Usage](https://img.shields.io/badge/Used_by-Mayor_of_Kamphaeng_Phet_City-success)
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-Next.js-black" />
+  <img src="https://img.shields.io/badge/Backend-Google_Apps_Script-4285F4" />
+  <img src="https://img.shields.io/badge/Data_Source-Google_Sheets-34A853" />
+  <img src="https://img.shields.io/badge/Styling-Tailwind_CSS-38BDF8" />
+</p>
 
-<p align="left">
-  <img src="https://res.cloudinary.com/dpa96jvla/image/upload/v1779244412/%E0%B8%94%E0%B8%B5%E0%B9%84%E0%B8%8B%E0%B8%99%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_1_gmuxku.png" width="400"/>
-  <img src="https://res.cloudinary.com/dpa96jvla/image/upload/v1779327553/%E0%B8%94%E0%B8%B5%E0%B9%84%E0%B8%8B%E0%B8%99%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_16_jhniqh.png" width="400"/>
+<br>
 
----
+## About
+
+Patient intake system built to support community healthcare workflows, including registration, patient lookup, and digital intake processes for field and clinic use.
+
+Designed based on direct requirements from nursing staff to reduce manual workload and improve data consistency.
+
+<br>
 
 ## Features
 
-- New patient registration
-- Existing patient lookup
-- Real-time staff notifications
-- Digital patient intake
+- Patient registration (new cases)  
+- Existing patient lookup  
+- Real-time staff notifications  
+- Digital intake workflow  
+
+<br>
 
 ## Tech Stack
 
-- Next.js
-- Tailwind CSS
-- Google Apps Script
-- Google Sheets
+- Next.js  
+- Tailwind CSS  
+- Google Apps Script  
+- Google Sheets  
 
-## Installation
+<br>
 
-```bash
-git clone https://github.com/ratchanon-noknoy2318/patient-registration-platform-nextjs
+## Impact
 
-cd patient-registration-platform-nextjs
+- Reduced manual workload by ~80%  
+- Used in real community healthcare operations  
+- Supported home visit workflows for municipal healthcare teams  
 
-npm install
-npm run dev
-```
+<br>
 
-## Proof
+## Reference  
 
-Used by the Mayor of Kamphaeng Phet City Municipality for home visits to bedridden and chronic disease patients.
-
-Reference:
-https://www.kppmu.go.th/news-detail?hd=1&id=124000
+Municipal healthcare use case: https://www.kppmu.go.th/news-detail?hd=1&id=124000
