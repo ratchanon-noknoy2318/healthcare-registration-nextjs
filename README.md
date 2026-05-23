@@ -47,6 +47,8 @@ Designed based on direct requirements from nursing staff to reduce manual worklo
 
 Municipal healthcare use case: https://www.kppmu.go.th/news-detail?hd=1&id=124000
 
+<br>
+
 ## Installation
 
 ```bash
