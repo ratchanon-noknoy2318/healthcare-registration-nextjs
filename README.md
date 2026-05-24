@@ -110,6 +110,18 @@ CHANNEL_SECRET=your_line_channel_secret
   <a href="https://www.facebook.com/kmch.kpp?locale=th_TH">
     <img src="https://res.cloudinary.com/dpa96jvla/image/upload/v1779586272/F5F5F5_1_cxvtug.png" width="60" style="border-radius:50%;" />
   </a>
+   <a href="https://www.kppmu.go.th/personnel?dpm=7&page=2">
+    <img src="https://fa8.naxapi.com/kppmu.go.th/dnm_file/staff/1684218438_9591_center.jpg" width="60" style="border-radius:50%;" />
+  </a>
 
   </a>
 </p>
+
+## License
+
+This project uses a dual-license model:
+
+- Code is licensed under the MIT License.
+- Content and data are licensed under CC0 1.0 Universal.
+
+See LICENSE files for details.
