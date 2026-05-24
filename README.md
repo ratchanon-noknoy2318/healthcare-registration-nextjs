@@ -103,3 +103,13 @@ Create a `.env.local` file in the root directory:
 ```env
 CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
 CHANNEL_SECRET=your_line_channel_secret
+```
+
+## 👥 Contributors
+<p align="left">
+  <a href="https://www.facebook.com/kmch.kpp?locale=th_TH">
+    <img src="https://res.cloudinary.com/dpa96jvla/image/upload/v1779586272/F5F5F5_1_cxvtug.png" width="60" style="border-radius:50%;" />
+  </a>
+
+  </a>
+</p>
