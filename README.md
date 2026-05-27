@@ -8,7 +8,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Production_Ready-brightgreen" />
   <img src="https://img.shields.io/badge/Use_Case-Healthcare_System-blue" />
-  <img src="https://img.shields.io/badge/Stack-Next.js_+_LINE_+_GAS-black" />
+  <img src="https://img.shields.io/badge/Stack-Next.js_+_Google_Apps_Script_+_LINE-black" />
 </p>
 
 ---
@@ -103,6 +103,7 @@ Create a `.env.local` file in the root directory:
 ```env
 CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
 CHANNEL_SECRET=your_line_channel_secret
+APPS_SCRIPT_WEB_APP_URL=GOOGLE_APPS_SCRIPT_URL
 ```
 
 ## 👥 Contributors
@@ -116,12 +117,3 @@ CHANNEL_SECRET=your_line_channel_secret
 
   </a>
 </p>
-
-## License
-
-This project uses a dual-license model:
-
-- Code is licensed under the MIT License.
-- Content and data are licensed under CC0 1.0 Universal.
-
-See LICENSE files for details.
