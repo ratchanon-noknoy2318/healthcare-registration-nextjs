@@ -11,6 +11,9 @@
   <img src="https://img.shields.io/badge/Stack-Next.js_+_Google_Apps_Script_+_LINE-black" />
 </p>
 
+<p align="center">
+  <img src="https://res.cloudinary.com/dpa96jvla/image/upload/v1779584919/%E0%B8%94%E0%B8%B5%E0%B9%84%E0%B8%8B%E0%B8%99%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_1_v8yqdd.png" alt="Patient Intake System Preview" width="100%" />
+</p>
 ---
 
 ## 🧠 The Problem
@@ -59,44 +62,34 @@ Designed specifically for **field nurses and municipal healthcare teams**
 
 ## 🧱 Tech Stack
 
-- Frontend: Next.js
-- Backend Services: Google Apps Script
-- Messaging: LINE Messaging API
-- Database: Google Sheets
-- UI: Tailwind CSS
+- **Frontend:** Next.js
+- **Backend Services:** Google Apps Script
+- **Messaging:** LINE Messaging API
+- **Database:** Google Sheets
+- **UI Framework:** Tailwind CSS
 
 ---
 
-## 🔌 Integrations
+## 🔌 Integrations & API Endpoints
 
-### LINE Messaging API
-
+### 🟢 LINE Messaging API
 Used to notify healthcare staff automatically.
 
-Endpoint:
-```txt
+```http
 POST /v2/bot/message/push
 ```
 
----
-
-### Google Apps Script Web App
-
+### 🔵 Google Apps Script Web App
 Used for patient registration, lookup, dashboard data, and appointment workflows.
 
-Endpoints:
-
-```txt
+```http
 GET  /exec
 POST /exec
 ```
 
-Supported actions:
-
-```txt
-register_new
-register_existing
-```
+**Supported Actions (Query Parameters):**
+* `register_new`
+* `register_existing`
 
 ---
 
@@ -162,22 +155,37 @@ graph TD
 
 ## 🚀 Getting Started
 
-```bash
-git clone https://github.com/ratchanon-noknoy2318/patient-registration-platform-nextjs
+### Prerequisites
+* Node.js (v18 or higher)
+* npm or yarn
 
-cd patient-registration-platform-nextjs
+### Installation Steps
 
-npm install
-npm run dev
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ratchanon-noknoy2318/patient-registration-platform-nextjs
+   ```
 
-Create `.env.local`
+2. Navigate into the project directory:
+   ```bash
+   cd patient-registration-platform-nextjs
+   ```
 
-```env
-CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
-ADMIN_USER_ID=your_line_user_id
-APPS_SCRIPT_WEB_APP_URL=your_google_apps_script_web_app_url
-```
+3. Install project dependencies:
+   ```bash
+   npm install
+   ```
 
----
+4. Create a `.env.local` file in the root directory and configure your credentials:
+   ```env
+   CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
+   ADMIN_USER_ID=your_line_user_id
+   APPS_SCRIPT_WEB_APP_URL=your_google_apps_script_web_app_url
+   ```
 
+5. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
