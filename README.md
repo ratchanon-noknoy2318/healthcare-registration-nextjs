@@ -70,6 +70,34 @@ Designed specifically for **field nurses and municipal healthcare teams**
 
 ---
 
+## 📊 Google Sheets Schema
+
+To set up the database, create a Google Sheet with the following **exact headers** in the first row (Row 1):
+
+
+| Column | Header Name (TH) | Key Mapping (JSON) | Type |
+| :--- | :--- | :--- | :--- |
+| **A** | เลขบัตรประจำตัวประชาชน | `citizenId` | String (Text) |
+| **B** | วัน-เวลาที่ลงทะเบียน | `registrationTime` | DateTime |
+| **C** | ชื่อ | `firstName` | String |
+| **D** | นามสกุล | `lastName` | String |
+| **E** | เพศ | `gender` | String |
+| **F** | วันเกิด | `birthDate` | Date (YYYY-MM-DD) |
+| **G** | เบอร์โทร | `phoneNumber` | String |
+| **H** | การแพ้ยา | `drugAllergies` | String |
+| **I** | อาการ/สิ่งที่ต้องการรับบริการ | `symptoms` | String (Text) |
+| **J** | น้ำหนัก | `weight` | Number |
+| **K** | ส่วนสูง | `height` | Number |
+| **L** | อายุ | `age` | Number |
+| **M** | สิทธิการรักษา | `medicalCoverage` | String |
+| **N** | วันนัดถัดไป | `nextAppointmentDate` | Date |
+| **O** | เวลานัดถัดไป | `nextAppointmentTime` | Time |
+| **P** | แผนก | `department` | String |
+| **Q** | ชื่อแพทย์ที่นัดหมาย | `doctorName` | String |
+| **R** | สถานะ | `status` | String |
+
+---
+
 ## 🔌 Integrations & API Endpoints
 
 ### 🟢 LINE Messaging API
@@ -101,11 +129,19 @@ To register a new patient via the Google Apps Script backend Web App module.
 **Request Payload (`POST /exec?action=register_new`)**
 ```json
 {
+  "citizenId": "1100000000000",
   "firstName": "John",
   "lastName": "Doe",
-  "citizenId": "1100000000000",
+  "gender": "Male",
+  "birthDate": "1990-01-01",
   "phoneNumber": "0812345678",
-  "symptoms": "Mild fever and cough for 2 days"
+  "drugAllergies": "None",
+  "symptoms": "Mild fever and cough for 2 days",
+  "weight": 70,
+  "height": 175,
+  "age": 36,
+  "medicalCoverage": "สิทธิบัตรทอง",
+  "status": "Pending"
 }
 ```
 
@@ -116,7 +152,7 @@ To register a new patient via the Google Apps Script backend Web App module.
   "message": "Patient registered successfully",
   "data": {
     "patientId": "HN-2026-0001",
-    "registrationTime": "2026-05-28T05:30:00.000Z"
+    "registrationTime": "2026-05-29T06:30:00.000Z"
   }
 }
 ```
@@ -163,7 +199,7 @@ graph TD
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ratchanon-noknoy2318/patient-registration-platform-nextjs
+   git clone https://github.com
    ```
 
 2. Navigate into the project directory:
