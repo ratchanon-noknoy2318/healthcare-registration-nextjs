@@ -1,4 +1,4 @@
-<h1 align="center">Patient Intake System</h1>
+<h1 align="center">Healthcare Registration App </h1>
 
 <p align="center">
   <strong>Modern Digital Intake Platform for Community Healthcare</strong><br>
@@ -14,6 +14,7 @@
 <p align="center">
   <img src="https://res.cloudinary.com/dpa96jvla/image/upload/v1779584919/%E0%B8%94%E0%B8%B5%E0%B9%84%E0%B8%8B%E0%B8%99%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%84%E0%B8%94%E0%B9%89%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD_1_v8yqdd.png" alt="Patient Intake System Preview" width="100%" />
 </p>
+
 ---
 
 ## 🧠 The Problem
@@ -195,11 +196,19 @@ graph TD
 * Node.js (v18 or higher)
 * npm or yarn
 
+### Google Apps Script Setup
+1. Create a new Google Sheet and set up headers as specified in the **Google Sheets Schema**.
+2. Navigate to **Extensions** > **Apps Script**.
+3. Paste your backend script into `Code.gs`.
+4. Click **Deploy** > **New deployment**.
+5. Select **Web app**, set *Execute as* to **Me**, and *Who has access* to **Anyone**.
+6. Copy the generated **Web app URL** for the environment setup.
+
 ### Installation Steps
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com
+   git clone https://github.com/ratchanon-noknoy2318/patient-registration-platform-nextjs
    ```
 
 2. Navigate into the project directory:
@@ -236,3 +245,8 @@ This system was officially deployed and utilized by the **Kamphaeng Phet Municip
 *   **Target Users:** Actively used by municipal field nurses, healthcare staff, and community health volunteers to bridge communication gaps.
 *   **Zero-Training Success:** Transitioned traditional administrative hurdles into a friction-free intake workflow, leveraging familiar channels like LINE without requiring formal software training for staff or patients.
 
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
